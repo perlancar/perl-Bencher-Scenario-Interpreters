@@ -15,6 +15,7 @@ our $scenario = {
         {type=>'command', name=>'python', cmdline=>[qw/python -c1/]},
         {type=>'command', name=>'nodejs', cmdline=>[qw/nodejs -e 1/]},
     ],
+    on_failure => 'skip',
 };
 
 # ABSTRACT: Benchmark startup time of various interpreters
