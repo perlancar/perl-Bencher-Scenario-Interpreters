@@ -9,11 +9,11 @@ use warnings;
 
 our $scenario = {
     participants => [
-        {type=>'command', name=>'perl'  , cmdline=>[qw/perl -e1/]},
-        {type=>'command', name=>'bash'  , cmdline=>[qw/bash --norc -c true/]},
-        {type=>'command', name=>'ruby'  , cmdline=>[qw/ruby -e1/]},
-        {type=>'command', name=>'python', cmdline=>[qw/python -c1/]},
-        {type=>'command', name=>'nodejs', cmdline=>[qw/nodejs -e 1/]},
+        {name=>'perl'  , cmdline=>[qw/perl -e1/]},
+        {name=>'bash'  , cmdline=>[qw/bash --norc -c true/]},
+        {name=>'ruby'  , cmdline=>[qw/ruby -e1/]},
+        {name=>'python', cmdline=>[qw/python -c1/]},
+        {name=>'nodejs', cmdline=>[qw/nodejs -e 1/]},
     ],
     on_failure => 'skip',
 };
