@@ -8,6 +8,7 @@ use strict;
 use warnings;
 
 our $scenario = {
+    summary => 'Benchmark startup time of various interpreters',
     participants => [
         {name=>'perl'  , cmdline=>[qw/perl -e1/]},
         {name=>'bash'  , cmdline=>[qw/bash --norc -c true/]},
@@ -18,8 +19,5 @@ our $scenario = {
     on_failure => 'skip',
 };
 
-# ABSTRACT: Benchmark startup time of various interpreters
-
-=head1 SYNOPSIS
-
- % bencher -m Interpreters [other options]...
+1;
+# ABSTRACT:
