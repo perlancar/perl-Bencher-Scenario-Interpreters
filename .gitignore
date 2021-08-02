@@ -2,3 +2,4 @@ Bencher-Scenario-Interpreters-*
 .build
 *~
 nytprof*
+.DS_Store
